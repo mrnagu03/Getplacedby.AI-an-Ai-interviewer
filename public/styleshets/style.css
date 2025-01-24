@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+
+
+.ailogo {
+    position: relative;
+    background-image: url("Ai.png");
+    background-size: cover;
+    background-position: center;
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    left: 20px;
+    top: 10px;
+
+}
+
+.ancher {
+    position: relative;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+
+}
+
+
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.login-box {
+    width: 360px;
+    background-color: rgba(154, 115, 115, 0.21);
+    color: aliceblue;
+    backdrop-filter: blur(12px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+
+}
+
+.signup-box {
+    width: 360px;
+    background-color: rgba(154, 115, 115, 0.21);
+    color: aliceblue;
+    backdrop-filter: blur(12px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    display: none;
+
+
+}
+
+.check {
+    display: flex;
+
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.input {
+    width: 360px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 30px;
+    width: 360px;
+    border-radius: 10px;
+    border: none;
+    background: #d14639;
+    color: aliceblue;
+    cursor: pointer;
+}

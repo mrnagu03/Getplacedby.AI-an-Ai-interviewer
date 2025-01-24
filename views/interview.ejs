@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+    </title>
+    <link rel="stylesheet" href="../styleshets/interview.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo"></div>
+            <div class="menu">
+                <a href="/dashboard">Dashboard</a><a href="">Help</a>
+            </div>
+
+        </div>
+        <div class="interview-section">
+            <div class="question-box">
+                <div class="que">
+                    <% for( let index=0; index < interviewResult.length ; index++ ) { %>
+                        <div class="questionNo">
+                            <p>Question NO: <%= index + 1 %>
+                            </p>
+
+                        </div>
+                        <% } %>
+
+                </div>
+                <h1 class="note"><span> <i class="ri-lightbulb-flash-line"></i>Note:</span> Click the Start Question
+                    Button to Access the interview
+                    Questions</h1>
+                <% for( let index=0; index < interviewResult.length ; index++ ) { %>
+                    <p class="p">
+                        <br>
+                        <textarea class="text" readonly> <%= interviewResult[index].Question %></textarea>
+                        <button class="speak"><i class="ri-volume-up-fill"></i> Listen</button>
+
+                    </p>
+                    <% } %>
+                        <div class="question-buttons">
+                            <button class="previous">Previous Question</button>
+                            <button class="next">Start Question</button>
+                        </div>
+                        <div class="reminder">
+                            <div class="reminder-box">
+                                <h2> <i class="ri-lightbulb-flash-line"></i>Reminder:</h2>
+                                <p>Please Turn On Your Webcam
+
+                                    For the best experience during your interview, we kindly request that you turn on
+                                    your
+                                    webcam. This allows us to better connect with you, observe your facial expressions,
+                                    and
+                                    ensure a more interactive and engaging session.
+
+                                    Thank you for your cooperation!</p>
+                            </div>
+
+                        </div>
+            </div>
+            <div class="webcam">
+                <h2>Webcam</h2>
+                <div class="video"><video id="webcam"></video></div>
+                <button id="toggleButton">Turn on webcam</button>
+                <div class="textarea">
+                    <textarea name="" id="transcription" placeholder="Your answer" readonly required></textarea>
+                    <div class="button-edit">
+                        <button class="edit">Edit</button>
+                        <button class="submit-ans" type="submit">Submit Answer</button>
+                    </div>
+                </div>
+                <div class="speach-buttons">
+                    <button id="start-btn">Start Recording</button>
+                    <button id="stop-btn" disabled>Stop Recording</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/interview.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c8b4b44d;
+    font-family: "Roboto Condensed", sans-serif;
+    overflow-x: hidden;
+
+
+
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+
+
+
+
+.nav {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    /* padding: 0.5vw 0px; */
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%; */
+    background-image: url(/Images/Getplaced.ai-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+
+    left: 2vw;
+
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #302f2f;
+    color: aliceblue;
+    display: flex;
+    font-size: 2vw;
+    cursor: pointer;
+    align-items: center;
+    margin-right: 40px;
+    justify-content: center;
+}
+
+.dashboard {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+
+}
+
+.menu {
+    min-width: 20%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 2vh;
+    padding-top: 2vw;
+    border-right: 1px solid #c8b4b475;
+
+}
+
+.menu p {
+    color: rgba(71, 68, 68, 0.701);
+}
+
+.menu button {
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 30px;
+    background-color: antiquewhite;
+    transition: all ease 0.5s;
+}
+
+.menu .ai-material {
+    background-color: yellow;
+}
+
+.menu button a {
+    text-decoration: none;
+    color: #2a2626;
+}
+
+
+.dasboard-details {
+    min-width: 80%;
+    min-height: 100%;
+    padding-left: 1vw;
+    position: relative;
+
+
+}
+
+.dashboard-box-1 {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.dash-nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+
+    align-items: center;
+    justify-content: start;
+    padding-top: 1vw;
+}
+
+.dash-nav button {
+    padding: 20px;
+
+}
+
+.pre-interview {
+    width: 100%;
+    min-height: 100%;
+    margin-top: 1vh;
+    position: relative;
+}
+
+.interview-details {
+    position: absolute;
+    display: none;
+    bottom: 40%;
+    left: 160px;
+    width: 60%;
+    min-height: 10%;
+    background-color: rgba(250, 235, 215, 0.465);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+
+
+
+
+}
+
+.interview-details.active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 2vw;
+    top: -120px;
+    left: 140px;
+    width: 60%;
+    min-height: 10%;
+    background-color: antiquewhite;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+
+}
+
+.interview-details.active h5 {
+    margin-top: 20px;
+}
+
+.interview-details.active input {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+}
+
+.interview-details.active textarea {
+    width: 100%;
+    resize: none;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    margin-top: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.interview-details.active .button {
+    margin-top: 2vw;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.interview-details.active .button button {
+    width: 120px;
+    height: 40px;
+    /* background-color: yellow;
+    color: rgb(16, 15, 15); */
+    background-color: rgb(70, 70, 164);
+    color: whitesmoke;
+    box-shadow: 0px 0px 10px 6px rgba(84, 82, 82, 0.588);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.interview-details.active .button button:hover {
+    background-color: rgb(70, 70, 164);
+    color: whitesmoke;
+}
+
+
+
+
+.pre-interview h2 {
+    text-align: center;
+    width: 100%;
+
+    padding: 10px;
+    background: #77646482;
+}
+
+.pre-interview .boxes {
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.pre-interview-box {
+    margin-top: 3vh;
+    width: 240px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.dashboard-box-2 {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.questions {
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.pre-que {
+    margin-top: 2vh;
+    max-width: 50%;
+    min-height: 55px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4vw;
+}
+
+.pre-que i {
+    cursor: pointer;
+    font-size: 1.4vw;
+}
+
+.dashboard-box-3 {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.dashboard-box-3 p {
+    margin-top: 15px;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+
+}
+
+.dashboard-box-3 .material-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+
+.dashboard-box-3 .search {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+.dashboard-box-3 .search-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.dashboard-box-3 .search-box input {
+    width: 20rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    height: 2rem;
+    border-radius: 50px;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.search-button {
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    background: #4a8abe;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.dashboard-box-3 .notes {
+    width: 100%;
+    min-height: 100%;
+    background: #0a0a0a;
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.dashboard-box-3 .notes p {
+    color: aliceblue;
+    width: 90%;
+    text-align: justify;
+}
+
+
+
+
+.dashboard-box-4 {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.dashboard-box-5 {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.dashboard-box-6 {
+    width: 100%;
+    height: 100%;
+    display: none;
+}

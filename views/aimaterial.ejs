@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styleshets/aimaterial.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="nav">
+            <div class="logo"></div>
+            <div class="profile">N</div>
+        </div>
+        <div class="dashboard">
+            <div class="menu">
+                <p>Interview</p>
+                <button class="new-interview"> <i class="ri-macbook-line"></i><a href="/dashboard"> New
+                        Interview</a></button>
+                <button class="pre-interview-que"> <i class="ri-question-fill"></i><a href=""> Previous Questions
+                    </a></button>
+                <p>Tools</p>
+                <button class="ai-material"> <i class="ri-sticky-note-fill"></i><a href=""> AI Materials</a></button>
+                <button class="ai-coach"> <i class="ri-chat-poll-fill"></i><a href=""> AI Career Coach</a></button>
+                <button class="ai-recruiters"> <i class="ri-speak-fill"></i><a href=""> Speak to
+                        Recruiters</a></button>
+                <p>other</p>
+                <button class="help-center"> <i class="ri-questionnaire-fill"></i><a href=""> Help Center</a></button>
+            </div>
+            <div class="dasboard-details">
+                <div class="dashboard-box-1">
+                    <h1>Mock Interview</h1>
+                    <p>
+                        Prepare for the interview in advance and get yourself in the best possible state.
+                    </p>
+                    <div class="dash-nav">
+                        <button class="start">+ Start Interview</button>
+                    </div>
+                    <div class="pre-interview">
+                        <h2>Your previous Interviews</h2>
+                        <div class="boxes">
+                            <div class="pre-interview-box"></div>
+                            <div class="pre-interview-box"></div>
+                            <div class="pre-interview-box"></div>
+                            <div class="pre-interview-box"></div>
+                            <div class="pre-interview-box"></div>
+                        </div>
+                        <div class="interview-details">
+                            <form action="/interview" method="post">
+                                <h1>Fill Your Interview Details</h1>
+
+                                <h5>Job Position/Job Role</h5>
+                                <input type="text" placeholder="Ex.Full Stack web Developer" required name="jobRole">
+
+
+                                <h5>Skills</h5>
+                                <input type="text" placeholder="Ex.ReactJs,NextJs etc.." required name="skills">
+
+
+                                <h5>Job Discription</h5>
+                                <textarea id="" rows="5" placeholder="Ex.Facinated with Full stack web development "
+                                    required name="discription"></textarea>
+
+
+                                <h5>Job Experience</h5>
+                                <input type="number" placeholder="EX.4" required name="experience">
+
+                                <div class="button">
+                                    <button type="submit">Start Interview</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dashboard-box-2">
+                    <h1>Previous Questions</h1>
+                    <p>Practice for your next interview for your better performance</p>
+                    <div class="questions">
+                        <div class="pre-que">
+                            <p>INTERVIWE-1: Questions asked by Google for job role Full stack development.</p> <i
+                                class="ri-links-fill"></i>
+                        </div>
+                        <div class="pre-que">
+                            <p>INTERVIWE-1: Questions asked by Google for job role Full stack development.</p> <i
+                                class="ri-links-fill"></i>
+                        </div>
+                        <div class="pre-que">
+                            <p>INTERVIWE-1: Questions asked by Google for job role Full stack development.</p> <i
+                                class="ri-links-fill"></i>
+                        </div>
+                        <div class="pre-que">
+                            <p>INTERVIWE-1: Questions asked by Google for job role Full stack development.</p> <i
+                                class="ri-links-fill"></i>
+                        </div>
+                        <div class="pre-que">
+                            <p>INTERVIWE-1: Questions asked by Google for job role Full stack development.</p> <i
+                                class="ri-links-fill"></i>
+                        </div>
+                        <div class="pre-que">
+                            <p>INTERVIWE-1: Questions asked by Google for job role Full stack development.</p> <i
+                                class="ri-links-fill"></i>
+                        </div>
+                        <div class="pre-que">
+                            <p>INTERVIWE-1: Questions asked by Google for job role Full stack development.</p> <i
+                                class="ri-links-fill"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="dashboard-box-3">
+                    <h1>AI Materials</h1>
+                    <p>Get Ai prefered Study materials for your interview preparation.</p>
+                    <div class="material-box">
+                        <form action="/Ai-material" method="post">
+                            <div class="search">
+                                <div class="search-box">
+                                    <input type="text" placeholder="Search for Job Role" name="topic">
+                                    <button type="submit" class="search-button">Search</button>
+                                </div>
+                        </form>
+
+
+
+                    </div>
+                    <div class="notes">
+                        <p>
+                            <% if ( AiMaterialinfo ) { %>
+                                <%= AiMaterialinfo %>
+                                    <% } %>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-box-4">
+                <h1>AI Career Coach</h1>
+            </div>
+            <div class="dashboard-box-5">
+                <h1>Speak to Recruiters</h1>
+            </div>
+            <div class="dashboard-box-6">
+                <h1>Help Center</h1>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="/javascripts/dashboard.js">
+
+    </script>
+
+</body>
+
+</html>

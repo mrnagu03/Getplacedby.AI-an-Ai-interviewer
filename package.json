@@ -1,0 +1,27 @@
+{
+  "name": "backendlearning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@neondatabase/serverless": "^0.10.4",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "getusermedia": "^2.0.1",
+    "mongoose": "^8.8.4",
+    "nodemon": "^3.1.9",
+    "react-webcam": "^7.2.0",
+    "uuid": "^11.0.3"
+  }
+}
